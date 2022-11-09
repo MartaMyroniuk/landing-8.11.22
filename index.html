@@ -1,3 +1,129 @@
-<html>
-  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FriendsWebsite</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <img class="logo" id="header-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Friends_logo.svg/2560px-Friends_logo.svg.png"
+                alt="Friends logo">
+        </div>
+        <nav id="nav-bar">
+            <ul class="nav-links">
+                <li>
+                    <a class="nav-link" href="#story">Story</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#actors">Actors</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#clothes">Merch</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="hero">
+            <h2>F.R.I.E.N.D.S</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your favorite actor from this show"
+                    required>
+                <input id="submit" type="submit" value="Let's show" class="btn">
+            </form>
+        </section>
+        <section id="story">
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-fire"></i>
+                </div>
+                <div class="desc">
+                    <h2>The pilot</h2>
+                    <p>"The Pilot", also known as "The One Where Monica Gets a Roommate", "The First One" and "The One
+                        Where It All Began", is the pilot episode and series premiere of the American television sitcom
+                        Friends. The episode premiered on NBC on September 22, 1994. </p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-truck"></i>
+                </div>
+                <div class="desc">
+                    <h2>Friends Director's</h2>
+                    <p>The series was produced by Bright/Kauffman/Crane Productions, in association with Warner Bros.
+                        Television. The original executive producers were Kevin S. Bright, Kauffman, and Crane.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                </div>
+                <div class="desc">
+                    <h2>Distributor</h2>
+                    <p>Warner Bros. Television Distribution</p>
+                </div>
+            </div>
+        </section>
+        <section id="actors">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/3EbbIfRWEJs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section id="clothes">
+            <div class="product" id="lobster">
+                <div class="level">T-shirt: You are my lobster</div>
+                <h2>15$</h2>
+                <ol>
+                    <li>Free deliver</li>
+                    <li>Delivery within two days</li>
+                    <li>Return possible</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="centralperk">
+                <div class="level">T-shirt: Central Perk</div>
+                <h2>10$</h2>
+                <ol>
+                    <li>Free deliver</li>
+                    <li>Delivery within two days</li>
+                    <li>Return possible</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="joey">
+                <div class="level">T-shirt: Joey doesnt share food</div>
+                <h2>10$</h2>
+                <ol>
+                    <li>Free deliver</li>
+                    <li>Delivery within two days</li>
+                    <li>Return possible</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="#">Privacy</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <span>Copyright 2022, Friends Website
+    </footer>
+</body>
+
 </html>

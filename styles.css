@@ -1,0 +1,44 @@
+@media screen and (min-width: 480px) {
+    body {
+        background-color: rgb(217, 217, 236);
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    background-color: antiquewhite;
+    left: 0;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.logo {
+    width: 60%;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: aliceblue;
+    border-radius: 10%;
+    border: 2px solid black;
+    padding-right: 40px;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-family: 'Xanh Mono', monospace;
+}
+
+.main {
+    margin-top: 12rem;
+}

@@ -40,5 +40,12 @@
 }
 
 .main {
-    margin-top: 12rem;
+    margin-top: 8rem;
+    font-family: 'Xanh Mono', monospace;
+}
+
+.pilot {
+    width: 20%;
+    margin-top: 1rem;
+    border-radius: 50%;
 }

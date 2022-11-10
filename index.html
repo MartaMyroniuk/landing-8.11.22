@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FriendsWebsite</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKZwfxC2kJe1Ke9IdK1D9p9MslznPOzL0hA&usqp=CAU">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -19,28 +21,28 @@
         <nav id="nav-bar">
             <ul class="nav-links">
                 <li>
-                    <a class="nav-link" href="#story">Story</a>
+                    <a href="#story">Story</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#actors">Actors</a>
+                    <a href="#actors">Actors</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#clothes">Merch</a>
+                    <a href="#clothes">Merch</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <section id="hero">
-            <h2>F.R.I.E.N.D.S</h2>
+        <section id="hero" class="hero">
+            <h2>Who is your favorite hero in FRIENDS?</h2>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input name="email" id="email" type="email" placeholder="Enter your favorite actor from this show"
+                <input class="border" name="email" id="email" type="email" placeholder="Enter your favorite actor from this show"
                     required>
-                <input id="submit" type="submit" value="Let's show" class="btn">
+                <input class="button" id="submit" type="submit" value="Let's show" class="btn">
             </form>
         </section>
         <section id="story">
-            <div class="grid">
+            <div class="photo-text">
                 <div class="icon">
                     <img class="pilot" src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/42/1508253243-friendss1e1.jpg"/>
                 </div>
@@ -51,7 +53,7 @@
                         Friends. The episode premiered on NBC on September 22, 1994. </p>
                 </div>
             </div>
-            <div class="grid">
+            <div class="photo-text">
                 <div class="icon">
                     <img class="pilot" src="https://img.buzzfeed.com/buzzfeed-static/static/2021-05/28/11/asset/8ffb23e43766/sub-buzz-2060-1622200654-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto"/>
                 </div>
@@ -61,7 +63,7 @@
                         Television. The original executive producers were Kevin S. Bright, Kauffman, and Crane.</p>
                 </div>
             </div>
-            <div class="grid">
+            <div class="photo-text">
                 <div class="icon">
                     <img class="pilot" src="https://media.glamour.com/photos/56957fce085ae0a85036f5d7/master/pass/entertainment-2015-03-couple-tv-living-room-main.jpg"/>
                 </div>
@@ -71,26 +73,26 @@
                 </div>
             </div>
         </section>
-        <section id="actors">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/3EbbIfRWEJs"
+        <section id="actors" class="actors">
+            <iframe class="video" id="video" width="800" height="500" src="https://www.youtube.com/embed/3EbbIfRWEJs"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </section>
-        <section id="clothes">
+        <section id="clothes" class="clothes">
             <div class="product" id="lobster">
-                <div class="level">T-shirt: You are my lobster</div>
-                <h2>15$</h2>
+                <h3 class="level">T-shirt: You are my lobster</h3>
+                <h2 class="price">15$</h2>
                 <ol>
                     <li>Free deliver</li>
                     <li>Delivery within two days</li>
                     <li>Return possible</li>
                 </ol>
-                <button class="btn">Select</button>
+                <button onclick="window.open('https://www.amazon.com/You-Lobster-T-Shirt-Woman-Kids/dp/B07TBJKX31')" class="btn">Select</button>
             </div>
             <div class="product" id="centralperk">
-                <div class="level">T-shirt: Central Perk</div>
-                <h2>10$</h2>
+                <h3 class="level">T-shirt: Central Perk</h3>
+                <h2 class="price">10$</h2>
                 <ol>
                     <li>Free deliver</li>
                     <li>Delivery within two days</li>
@@ -99,8 +101,8 @@
                 <button class="btn">Select</button>
             </div>
             <div class="product" id="joey">
-                <div class="level">T-shirt: Joey doesnt share food</div>
-                <h2>10$</h2>
+                <h3 class="level">T-shirt: Joey doesnt share food</h3>
+                <h2 class="price">10$</h2>
                 <ol>
                     <li>Free deliver</li>
                     <li>Delivery within two days</li>

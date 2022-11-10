@@ -4,16 +4,29 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(255, 238, 251);
+    background: linear-gradient(90deg, rgba(255, 238, 251, 1) 0%, rgba(235, 248, 255, 1) 100%);
+}
+
 .header {
     position: fixed;
     top: 0;
-    background-color: antiquewhite;
+    background: rgb(221, 126, 10);
+    background: linear-gradient(90deg, rgba(221, 126, 10, 1) 0%, rgba(121, 9, 57, 1) 50%, rgba(15, 110, 129, 1) 100%);
     left: 0;
     display: flex;
     padding-top: 10px;
     justify-content: space-around;
     align-items: center;
-    border-radius: 10%;
+    border-radius: 15%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -37,6 +50,7 @@
 .nav-links li a {
     text-decoration: none;
     font-family: 'Xanh Mono', monospace;
+    font-size: 20px;
 }
 
 .main {
@@ -44,8 +58,105 @@
     font-family: 'Xanh Mono', monospace;
 }
 
+.button {
+    position: relative;
+    top: 0px;
+    padding: 5px 15px;
+    border: solid #f3e304 3px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 0px #fab700;
+    font-family: 'Xanh Mono', monospace;
+
+}
+
+.hero {
+    background: rgb(236, 192, 225);
+    background: linear-gradient(90deg, rgba(236, 192, 225, 1) 0%, rgba(170, 219, 245, 1) 100%);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-bottom: #864677 5px solid;
+}
+
+.border {
+    position: relative;
+    top: 0px;
+    padding: 5px 15px;
+    border: solid #070707 3px;
+    border-radius: 20px;
+}
+
 .pilot {
-    width: 20%;
+    width: 80%;
     margin-top: 1rem;
     border-radius: 50%;
+    box-shadow: 3px 3px 5px 6px rgb(215, 216, 214);
+    border: #070707 2px solid;
+    margin-bottom: 40px;
+}
+
+.photo-text {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: #f09642 2px solid;
+    font-family: 'Rubik Bubbles', cursive;
+}
+
+.actors {
+    text-align: center;
+}
+
+.video {
+    border: #f89018 10px inset;
+    margin-bottom: 30px;
+}
+
+.clothes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 200px;
+    margin-right: 200px;
+    column-gap: 50px;
+}
+
+.level {
+    font: 'Rubik Bubbles', cursive;
+    color: #ec6516;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.price {
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(236, 192, 225, 1) 0%, rgba(170, 219, 245, 1) 100%);
+    color: black;
+    border-radius: 30%;
+    margin: auto;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.btn:active {
+    background: pink;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #f89018 1px solid;
+    padding-bottom: 15px;
+    background: #edf051;
 }
